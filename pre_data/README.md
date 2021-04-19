@@ -2,3 +2,7 @@
 
 The environment for keras-bert is different with our MUGS, so we firstly generate the representations inherently by the gen_emb_Bert.py file.
 The required version of packages are in requirements.txt.
+You can use the following commend in Anaconda to create a new environment.
+```
+$ conda create --name <env_name> --file requirements.txt
+```
