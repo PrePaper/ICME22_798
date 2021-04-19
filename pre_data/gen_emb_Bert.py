@@ -88,9 +88,9 @@ def get_twitter_matrix(phase, tokenizer_input):
 
 def train(dataset='weibo'):
     if dataset == 'weibo':
-        pretrained_path = '/media/hibird/data/corpus/chinese_L-12_H-768_A-12'  # for Chinese in weibo
+        pretrained_path = '/XXXX/corpus/chinese_L-12_H-768_A-12'  # for Chinese in weibo
     elif dataset == 'Twitter':
-        pretrained_path = '/media/hibird/data/corpus/uncased_L-12_H-768_A-12'  # for English in Twitter
+        pretrained_path = '/XXXX/corpus/uncased_L-12_H-768_A-12'  # for English in Twitter
     else:
         raise ValueError('ERROR! dataset must be weibo or Twitter!')
     config_path = '{}/bert_config.json'.format(pretrained_path)
