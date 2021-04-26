@@ -4,9 +4,9 @@ The gen_by_VGG.py file is for generating visual unimodal representations of imag
 The gen_emb_Bert.py file is used to generate textual unimodal representations of text content in Weibo and Twitter datasets and prepare the representation files for MUGS.
 
 # Note
-The environment for keras-bert is different from the MUGS.
-The required version of packages are in requirements.txt.
-You can use the following commend in Anaconda to create a new environment.
+The environment for keras-bert is different from the MUGS. 
+The python version is python-3.8.6 and the required version of packages are in requirements.txt.
+You can install all the required packages using the following command:
 ```
-$ conda create --name <env_name> --file requirements.txt
+$ pip install -r requirements.txt
 ```
