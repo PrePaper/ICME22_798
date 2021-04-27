@@ -1,5 +1,5 @@
 # Prepare data
-The directory weibo_dataset contains the representations of data in Weibo dataset.
+Files in this directory are used to prepare data for MUGS with meta-data in Weibo and Twitter datasets.
 The gen_by_VGG.py file is for generating visual unimodal representations of images in Weibo and Twitter datasets. 
 The gen_emb_Bert.py file is used to generate textual unimodal representations of text content in Weibo and Twitter datasets and prepare the representation files for MUGS.
 
