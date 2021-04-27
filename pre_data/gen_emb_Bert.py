@@ -57,11 +57,11 @@ def get_twitter_matrix(phase, tokenizer_input):
 
     corpus_dir = '/XXXX/image-verification-corpus/mediaeval2016'
     all_img_emb = pkl.load(open('{}/img_emb_vgg19_py3.pkl'.format(corpus_dir), 'rb'))
-    translated_tweets = open('{}/translated_tweet_all.txt'.format(corpus_dir), 'r').readlines()
-    translated_dict = {}
-    for line in translated_tweets:
-        args = line.strip().split('\t')
-        translated_dict[args[0]] = args[1]
+    # translated_tweets = open('{}/translated_tweet_all.txt'.format(corpus_dir), 'r').readlines()
+    # translated_dict = {}
+    # for line in translated_tweets:
+    #    args = line.strip().split('\t')
+    #    translated_dict[args[0]] = args[1]
     if phase == 'train':
         tweets = open('{}/devset/posts.txt'.format(corpus_dir), 'r').readlines()[1:]
         image_index = 3
@@ -154,3 +154,4 @@ def train(dataset='weibo'):
 
 if __name__ == '__main__':
     train('weibo')
+    train('Twitter')
