@@ -11,7 +11,7 @@ seq_len = 50
 def get_weibo_matrix(data_type, tokenizer):
     corpus_dir = '/XXXX/MM17-WeiboRumorSet/tweets/'
     all_img_embed = pkl.load(
-        open('/XXXX/MM17-WeiboRumorSet/image_embed_py3.pkl', 'rb'))
+        open('/XXXX/MM17-WeiboRumorSet/img_emb_vgg19.pkl', 'rb'))
     rumor_content = open('{}/{}_rumor.txt'.format(corpus_dir, data_type)).readlines()
     nonrumor_content = open('{}/{}_nonrumor.txt'.format(corpus_dir, data_type)).readlines()
 
@@ -56,7 +56,7 @@ def get_twitter_matrix(phase, tokenizer_input):
     label_dict = {'fake': [0, 1], 'real': [1, 0]}
 
     corpus_dir = '/XXXX/image-verification-corpus/mediaeval2016'
-    all_img_emb = pkl.load(open('{}/img_emb_vgg19_py3.pkl'.format(corpus_dir), 'rb'))
+    all_img_emb = pkl.load(open('{}/img_emb_vgg19.pkl'.format(corpus_dir), 'rb'))
     # translated_tweets = open('{}/translated_tweet_all.txt'.format(corpus_dir), 'r').readlines()
     # translated_dict = {}
     # for line in translated_tweets:
