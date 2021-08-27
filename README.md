@@ -1,5 +1,5 @@
-# MM21-paper-id-2418
-Pytorch code for paper 2418: "MUGS: Multimodal Rumor Detection by Multigranular Structure Learning"
+# submit to AAAI2022
+Pytorch code for paper: "MUGS: Multimodal Rumor Detection by Multigranular Structure Learning"
 
 # Overview
 This directory contains code necessary to run the MUGS. MUGS is a multimodal rumor detection network by multigranular structure learning. See our paper for details on the code.
