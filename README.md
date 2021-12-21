@@ -1,4 +1,4 @@
-# submit to AAAI2022
+# submit to ICME2022
 Pytorch code for paper: "MUGS: Multimodal Rumor Detection by Multigranular Structure Learning"
 
 # Overview
