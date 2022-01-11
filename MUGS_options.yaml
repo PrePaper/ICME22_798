@@ -1,13 +1,13 @@
 dataset:
-    val_rate: 0.3
+    val_rate: 0.0
     val_from: test
 model:
     fusion:
         dim_v: 4096
-        dim_t: 38400
-        dim_hv: 1024
-        dim_ht: 1024
-        dim_mm: 1024
+        dim_t: 0
+        dim_hv: 512
+        dim_ht: 512
+        dim_mm: 512
         R: 2
         activation_v: relu
         activation_t: relu
@@ -16,18 +16,13 @@ model:
     classif:
         dropout: 0
     fake_dec:
-        hidden1: 512
-        hidden2: 128
-        hidden3: 32
+        hidden1: 62
         activation1: relu
-        activation2: relu
-        activation3: relu
         activation4: softmax
 optim:
-    direct_modality: text
-    triplet_loss_lambda: 0.3
+    triplet_loss_lambda: 1
     triplet_margin: 0.2
-    pairwise_loss_lambda: 0.5
+    pairwise_loss_lambda: 1
     pairwise_margin: 0.2
     print_freq: 10
     resume: ./logs
