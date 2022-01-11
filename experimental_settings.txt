@@ -1,0 +1,14 @@
+Here we display our detailed experimental settings and the model parameters used in training MUGS.
+For text modality, we use the pre-trained models Bert as the text feature extraction network with the word dimension of 768.
+For image modality, we use the VGG-19 pre-trained on ImageNet as the image feature extraction network with the dimension of 4096.
+The parameters of those two are frozen when training MUGS.
+The text/image multimodal projection network is a fully connected layer of size 512 with a relu activation function.
+During the multi-granular structure learning, we set the iterative frequency to 2 and the dimension of fused multimodal representation to 1024
+with the fused layer k=2.
+The rumor detection module consists of two fully connected layers of sizes 64 and 2 respectively 
+with the activation functions being relu and softmax. 
+The batch size of our model is 128, the learning rate is 0.00001 for Weibo and 0.0005 for Twitter, the dropout rate is 0.4. 
+And we use Adam optimizer to train our model with 0.0001 weight decay. 
+As for the hyperparameters, We fine-tune our model to get the appropriate values of the hyperparameters. 
+The margin for metric-based triplet and contrastive pairwise learning are m_{tl} = 0.2 and m_{pl} = 0.2. 
+And the weights of them are \lambda_{tl} = 1 and \lambda_{pl} = 1.
